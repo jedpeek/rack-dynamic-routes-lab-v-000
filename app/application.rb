@@ -1,5 +1,6 @@
 class Application
   def call(env)
+    Item.new("Banana", ".19")
     resp = Rack::Response.new
     req = Rack::Request.new(env)
 
